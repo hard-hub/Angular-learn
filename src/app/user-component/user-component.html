@@ -1,0 +1,11 @@
+<div>
+    <button (click)="onSelectUser()">
+        <img 
+        [src]="imagePath" 
+        [alt]="selectedUser.name" />
+        <!-- you don't need to use it like this, instead you can use a getter and also in the getter,
+          you don't need to call the method, just reference it and it will work as it is a getter -->
+        <!-- [src]="'assests/users/' + selectedUser.avatar"  -->
+        <span>{{selectedUser.name}}</span>
+    </button>
+</div>
